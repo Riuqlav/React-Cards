@@ -1,2 +1,2 @@
-# React-Tutorial
-Working through a react crash course, storing snippets here
+# React-Cards
+Reusable webpage template with a few cards
