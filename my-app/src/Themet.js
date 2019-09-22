@@ -21,7 +21,7 @@ export default class Themet extends Component{
     render(){
       return(
         <div style ={{background: this.state.color}}>
-            <button onClick = {this.changeColor}>
+            <button className = 'btn' onClick = {this.changeColor}>
               Change color
               </button>
         </div>

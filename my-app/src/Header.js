@@ -3,31 +3,33 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import './Header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Themet from './Themet.js'
 
 export default class Header extends React.Component{
     render(){
         return(
-            <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-    <a class="navbar-brand abs">Navbar 1</a>
-    
-    <div class="navbar-collapse collapse" id="collapsingNavbar">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="//codeply.com">Codeply</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#myAlert" data-toggle="collapse">Link</a>
-            </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="" data-target="#myModal" data-toggle="modal">About</a>
-            </li>
-        </ul>
-    </div>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Data1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Data2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Data3</a>
+      </li>
+    </ul>
+    <Themet />
+  </div>
 </nav>
         );
     }
