@@ -3,13 +3,31 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import './Header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Themet from './Themet.js'
+
+
+
+const green = '#2ECC71';
+const gold = '#FFC300';
 
 export default class Header extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      color: green
+    };
+    this.changeColor = this.changeColor.bind(this);
+  }
+
+  changeColor(){
+    const newColor = this.state.color == green ? gold : green;
+  this.setState({color: newColor});
+  }
+
     render(){
         return(
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+          <nav class="navbar navbar-expand-lg" style ={{background: this.state.color}}>
+  <a class="navbar-brand" href="#"></a>
+  <img src={ require('./images/swords.png') } />
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -28,7 +46,7 @@ export default class Header extends React.Component{
         <a class="nav-link" href="#">Data3</a>
       </li>
     </ul>
-    <Themet />
+    <button className = 'btn' onClick = {this.changeColor} style = {{float: 'right'}}> </button>
   </div>
 </nav>
         );
