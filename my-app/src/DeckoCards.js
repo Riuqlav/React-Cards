@@ -20,73 +20,39 @@ export default class DeckoCards extends React.Component{
     </Card.Text>
   </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Source:  usopen.org </small>
+      <small className="text-muted">Data Source:  usopen.org </small>
     </Card.Footer>
   </Card>
   <Card>
-    <Card.Img variant="top" src={ require('./images/Sunrun2018.png') } />
+    <Card.Img variant="top" src={ require('./images/grandslam.png') } />
     <Card.Body>
-    <Card.Title>Personal Running Data</Card.Title>
+    <Card.Title>Grandslam Wins in Last 15 Years</Card.Title>
     <Card.Text>
-      Tracked paces and times for runs betwen the 2018 and 2019 Sun Run in Vancouver
+      Total slam wins at Aus Open, French Open, Wimbledon, and US Open. Big 3 can't be stopped
     </Card.Text>
   </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Source:  Nike+ Training Data </small>
+      <small className="text-muted">Data Source: Wikipedia lol  </small>
     </Card.Footer>
   </Card>
-  <Card>
-    <Card.Img variant="top" src={ require('./images/vicHousing.png') } />
-    <Card.Body>
-    <Card.Title>Victoria Rental Prices</Card.Title>
-    <Card.Text>
-      Web-scraped rental prices rentals in the Victoria BC area to compare prices per bedrooms
-    </Card.Text>
-  </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Source:  kijiji.ca </small>
-    </Card.Footer>
-  </Card>
-</CardColumns>
 
-<CardColumns style={{display: 'flex', flexDirection: 'row', width: '70rem'}}>
   <Card>
     <Card.Img variant="top" src={ require('./images/Total_USopen.png') } />
     <Card.Body>
-    <Card.Title>Total US Open Wins in the Open Era</Card.Title>
+    <Card.Title>US Open Wins in the Open Era</Card.Title>
     <Card.Text>
-      Trying out a new graph to visualize the total amount of grand slam wins at flushing meadows
+      Visualized the total amount of grand slam wins at flushing meadows
     </Card.Text>
   </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Source:  usopen.org </small>
-    </Card.Footer>
-  </Card>
-  <Card>
-    <Card.Img variant="top" src={ require('./images/Sunrun2018.png') } />
-    <Card.Body>
-    <Card.Title>Personal Running Data</Card.Title>
-    <Card.Text>
-      Tracked paces and times for runs betwen the 2018 and 2019 Sun Run in Vancouver
-    </Card.Text>
-  </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Source:  Nike+ Training Data </small>
-    </Card.Footer>
-  </Card>
-  <Card>
-    <Card.Img variant="top" src={ require('./images/vicHousing.png') } />
-    <Card.Body>
-    <Card.Title>Victoria Rental Prices</Card.Title>
-    <Card.Text>
-      Web-scraped rental prices rentals in the Victoria BC area to compare prices per bedrooms
-    </Card.Text>
-  </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Source:  kijiji.ca </small>
+      <small className="text-muted">Data Source:  usopen.org </small>
     </Card.Footer>
   </Card>
 </CardColumns>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 </div>
         );
     }
